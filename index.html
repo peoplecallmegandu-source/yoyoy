@@ -1,0 +1,358 @@
+<!--  -->
+<!--  -->
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:300,400,500,600,700&family=Inter:300,400,500,600,700&display=swap" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lord Rama — Ram Bhakti Portal</title>
+  <meta name="description" content="A devotional portal dedicated to Lord Rama — life, teachings, temples, festivals and resources." />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root{ --accent:#b5832f; --deep:#04293a; }
+    body{ font-family: 'Inter', sans-serif; }
+    h1,h2,h3{ font-family: 'Playfair Display', serif; }
+  </style>
+</head>
+<body style="font-family: 'Playfair Display', sans-serif;" class="bg-white text-slate-800 antialiased leading-relaxed">
+  <!-- NAV -->
+  <header class="w-full bg-white/60 backdrop-blur sticky top-0 z-40 shadow-sm">
+    <div class="w-full px-6 py-4 flex items-center justify-between max-w-none">
+      <a href="#" onclick="window.parent.handlePreviewNavigation(\'index.html\'); return false;" class="flex items-center gap-3">
+        <div class="w-10 h-10 bg-gradient-to-br from-yellow-400 to-orange-600 rounded-lg flex items-center justify-center text-white font-bold">र</div>
+        <div>
+          <div class="text-lg font-semibold">Ram Bhakti</div>
+          <div class="text-xs text-slate-500">Remembrance • Teachings • Temples</div>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex gap-6 items-center text-sm font-medium">
+        <a href="#" onclick="window.parent.handlePreviewNavigation(\'index.html\'); return false;" class="text-slate-700 hover:text-amber-600 transition">Home</a>
+        <a href="#" onclick="window.parent.handlePreviewNavigation(\'about.html\'); return false;" class="text-slate-700 hover:text-amber-600 transition">About Rama</a>
+        <a href="#" onclick="window.parent.handlePreviewNavigation(\'contact.html\'); return false;" class="text-slate-700 hover:text-amber-600 transition">Contact</a>
+        <a href="#gallery" class="ml-2 inline-block bg-amber-600 text-white px-4 py-2 rounded shadow hover:scale-105 transition">Gallery</a>
+      </nav>
+
+      <button id="navToggle" class="md:hidden p-2 rounded hover:bg-slate-100 transition" aria-label="Toggle navigation">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-slate-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+    <div id="mobileNav" class="md:hidden hidden px-6 pb-4">
+      <a href="#" onclick="window.parent.handlePreviewNavigation(\'index.html\'); return false;" class="block py-2 text-slate-700 hover:text-amber-600">Home</a>
+      <a href="#" onclick="window.parent.handlePreviewNavigation(\'about.html\'); return false;" class="block py-2 text-slate-700 hover:text-amber-600">About Rama</a>
+      <a href="#" onclick="window.parent.handlePreviewNavigation(\'contact.html\'); return false;" class="block py-2 text-slate-700 hover:text-amber-600">Contact</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main class="w-full max-w-none">
+    <section class="w-full relative">
+      <div class="w-full h-[60vh] md:h-[72vh] relative overflow-hidden">
+        <img src="https://images.pexels.com/photos/16732873/pexels-photo-16732873.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Lord Rama" class="w-full h-full object-cover object-center transform transition duration-700 hover:scale-105" />
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-white/80"></div>
+        <div class="absolute left-6 md:left-20 bottom-8 md:bottom-14 text-left">
+          <h1 class="text-3xl md:text-5xl leading-tight font-bold text-deep drop-shadow-md">Shri Ram — The Embodiment of Virtue</h1>
+          <p class="mt-3 text-sm md:text-base text-slate-700 max-w-xl">Explore the life, bhakti, teachings and temples of Lord Rama — an inspiration for righteousness, devotion and compassionate leadership.</p>
+          <div class="mt-5 flex gap-3">
+            <a href="#gallery" class="inline-block bg-amber-600 text-white px-4 py-2 rounded shadow hover:translate-y-[-3px] transition">View Gallery</a>
+            <a href="#" onclick="window.parent.handlePreviewNavigation(\'about.html\'); return false;" class="inline-block bg-transparent border border-slate-300 text-slate-800 px-4 py-2 rounded hover:bg-slate-100 transition">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUICK LINKS -->
+    <section class="w-full px-6 py-10">
+      <div class="w-full flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+        <div>
+          <h2 class="text-2xl md:text-3xl font-semibold">Paths of Remembrance</h2>
+          <p class="text-sm text-slate-600 mt-1">Stories, temples, festivals and resources to deepen your connection.</p>
+        </div>
+        <div class="flex gap-2 items-center">
+          <a href="#" onclick="window.parent.handlePreviewNavigation(\'about.html\'); return false;" class="text-sm text-amber-600 hover:underline">Biography</a>
+          <a href="#gallery" class="text-sm text-amber-600 hover:underline">Gallery</a>
+          <a href="#" onclick="window.parent.handlePreviewNavigation(\'contact.html\'); return false;" class="text-sm text-amber-600 hover:underline">Connect</a>
+        </div>
+      </div>
+
+      <!-- FEATURE CARDS -->
+      <div class="w-full mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <article class="w-full bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-lg transition transform hover:-translate-y-1 p-5">
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 flex items-center justify-center rounded bg-amber-100 text-amber-700 font-semibold">1</div>
+            <div>
+              <h3 class="text-lg font-semibold">Life of Rama</h3>
+              <p class="text-sm text-slate-600 mt-1">From Ayodhya prince to righteous king — key episodes from the Ramayana.</p>
+              <a href="#" onclick="window.parent.handlePreviewNavigation(\'about.html\'); return false;" class="mt-3 inline-block text-amber-600 text-sm hover:underline">Read more</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="w-full bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-lg transition transform hover:-translate-y-1 p-5">
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 flex items-center justify-center rounded bg-amber-100 text-amber-700 font-semibold">𝄞</div>
+            <div>
+              <h3 class="text-lg font-semibold">Bhajans & Chants</h3>
+              <p class="text-sm text-slate-600 mt-1">Curated chants, Rama nam stuti and popular bhajans to listen and sing along.</p>
+              <a href="#" class="mt-3 inline-block text-amber-600 text-sm hover:underline">Listen</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="w-full bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-lg transition transform hover:-translate-y-1 p-5">
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 flex items-center justify-center rounded bg-amber-100 text-amber-700 font-semibold">★</div>
+            <div>
+              <h3 class="text-lg font-semibold">Temples & Pilgrimage</h3>
+              <p class="text-sm text-slate-600 mt-1">Explore famous Rama temples including Ayodhya, Rameswaram connections and local shrines.</p>
+              <a href="#gallery" class="mt-3 inline-block text-amber-600 text-sm hover:underline">Explore</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- GALLERY / FILTERS -->
+    <section id="gallery" class="w-full px-6 py-10">
+      <div class="w-full flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+        <div>
+          <h2 class="text-2xl md:text-3xl font-semibold">Gallery & Scenes from the Ramayana</h2>
+          <p class="text-sm text-slate-600 mt-1">Paintings, temple icons and Ayodhya vistas — click to enlarge.</p>
+        </div>
+        <div class="flex gap-2 items-center">
+          <div class="text-sm text-slate-600">Filter:</div>
+          <div class="flex gap-2">
+            <button class="filter-btn px-3 py-1 rounded bg-amber-100 text-amber-700 text-sm" data-filter="all">All</button>
+            <button class="filter-btn px-3 py-1 rounded text-sm" data-filter="icons">Icons</button>
+            <button class="filter-btn px-3 py-1 rounded text-sm" data-filter="scenes">Scenes</button>
+            <button class="filter-btn px-3 py-1 rounded text-sm" data-filter="temples">Temples</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-full mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <article class="gallery-card w-full bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-lg transition transform hover:-translate-y-1" data-type="icons" data-title="Rama Icon">
+          <div class="w-full h-56 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1607114252966-d40cdaa0c6de?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHw1fHxUcmFkaXRpb25hbCUyMGljb24lMjBwYWludGluZyUyMG9mJTIwTG9yZCUyMFJhbWElMjB3aXRoJTIwYm93JTIwYW5kJTIwYXJyb3clMkMlMjBibHVlJTIwY29tcGxleGlvbiUyQyUyMG9ybmF0ZSUyMGpld2VscnklMkMlMjB0ZW1wbGUlMjBwcmFrYXNofGVufDB8MHx8fDE3NTUyNjE0Mzh8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Rama Icon" class="w-full h-full object-cover" />
+          </div>
+          <div class="p-4">
+            <h3 class="text-lg font-semibold">Rama Icon</h3>
+            <p class="text-sm text-slate-600 mt-1">A classic deity icon used in prayer and puja.</p>
+            <div class="mt-3 flex items-center justify-between">
+              <div class="text-xs text-slate-500">Icon • Timeless</div>
+              <button class="openLightbox inline-block text-amber-600 text-sm hover:underline" data-img="https://pixabay.com/get/gfa6b007bfe2297d01014c897340446a51bb5fd53c2301365f70781e2150f48fe8cf487b93eb41e77b090eabe06420fe64f63c3e1566134d5d3552ee2be2a2e50_640.jpg" data-desc="Lord Rama — symbol of dharma and devotion">View</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="gallery-card w-full bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-lg transition transform hover:-translate-y-1" data-type="scenes" data-title="Rama and Sita">
+          <div class="w-full h-56 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1713103659810-fd53545c9239?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHwyfHxSb21hbnRpYyUyMGRlcGljdGlvbiUyMG9mJTIwTG9yZCUyMFJhbWElMjBhbmQlMjBTaXRhJTIwdW5kZXIlMjBhJTIwYmFueWFuJTIwdHJlZSUyQyUyMHNvZnQlMjBjb2xvcnMlMkMlMjBkZXZvdGlvbmFsJTIwcGFpbnRpbmd8ZW58MHwwfHx8MTc1NTI2MTQzOXww&ixlib=rb-4.1.0&q=80&w=1080" alt="Rama and Sita" class="w-full h-full object-cover" />
+          </div>
+          <div class="p-4">
+            <h3 class="text-lg font-semibold">Rama & Sita</h3>
+            <p class="text-sm text-slate-600 mt-1">Depiction of companionship and virtue in exile.</p>
+            <div class="mt-3 flex items-center justify-between">
+              <div class="text-xs text-slate-500">Scene • Exile</div>
+              <button class="openLightbox inline-block text-amber-600 text-sm hover:underline" data-img="https://images.pexels.com/photos/6071442/pexels-photo-6071442.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" data-desc="Sita and Rama — dharma and devotion together">View</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="gallery-card w-full bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-lg transition transform hover:-translate-y-1" data-type="temples" data-title="Ayodhya Ghat">
+          <div class="w-full h-56 overflow-hidden">
+            <img src="https://pixabay.com/get/g0c7bcafc1e745c075a30ab780b221d0e53dded6396292e732d74b91db7e47571ca53de82f3002a1b3ad1f8dd739a452756e344b086aa0359e1530480fa252121_640.jpg" alt="Ayodhya" class="w-full h-full object-cover" />
+          </div>
+          <div class="p-4">
+            <h3 class="text-lg font-semibold">Ayodhya Ghats</h3>
+            <p class="text-sm text-slate-600 mt-1">The sacred landscape associated with Lord Rama's birthplace.</p>
+            <div class="mt-3 flex items-center justify-between">
+              <div class="text-xs text-slate-500">Pilgrimage • Ayodhya</div>
+              <button class="openLightbox inline-block text-amber-600 text-sm hover:underline" data-img="https://pixabay.com/get/g15e1be2221368da10b233d3799bd76d27c88724aeca52510cc747a2609eab45c16fff0b5d9406725d1a7de0d7dd462072075ae2b0c82fe10599c188beb7698cc_640.jpg" data-desc="The sacred Sarayu ghats at Ayodhya">View</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Additional cards (Hanuman, Ravan) -->
+        <article class="gallery-card w-full bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-lg transition transform hover:-translate-y-1" data-type="icons" data-title="Hanuman">
+          <div class="w-full h-56 overflow-hidden">
+            <img src="https://images.pexels.com/photos/15902871/pexels-photo-15902871.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Hanuman" class="w-full h-full object-cover" />
+          </div>
+          <div class="p-4">
+            <h3 class="text-lg font-semibold">Hanuman — Devotee</h3>
+            <p class="text-sm text-slate-600 mt-1">The ideal devotee and companion to Lord Rama.</p>
+            <div class="mt-3 flex items-center justify-between">
+              <div class="text-xs text-slate-500">Icon • Devotion</div>
+              <button class="openLightbox inline-block text-amber-600 text-sm hover:underline" data-img="https://images.pexels.com/photos/30273583/pexels-photo-30273583.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" data-desc="Hanuman — devotion and strength">View</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="gallery-card w-full bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-lg transition transform hover:-translate-y-1" data-type="scenes" data-title="Ravana Defeat">
+          <div class="w-full h-56 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1713986719575-e59f3e954737?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHw1fHxFcGljJTIwc2NlbmUlMjBvZiUyMFJhbWElMjdzJTIwdmljdG9yeSUyMG92ZXIlMjBSYXZhbmElMkMlMjBkcmFtYXRpYyUyMGNvbXBvc2l0aW9uJTJDJTIwYmF0dGxlZmllbGQlMkMlMjBjbGFzc2ljJTIwcGFpbnRpbmclMjBzdHlsZXxlbnwwfDB8fHwxNzU1MjYxNDQ1fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Ravana Defeat" class="w-full h-full object-cover" />
+          </div>
+          <div class="p-4">
+            <h3 class="text-lg font-semibold">Triumph of Dharma</h3>
+            <p class="text-sm text-slate-600 mt-1">Rama's victory symbolizing the triumph of righteousness.</p>
+            <div class="mt-3 flex items-center justify-between">
+              <div class="text-xs text-slate-500">Epic • Victory</div>
+              <button class="openLightbox inline-block text-amber-600 text-sm hover:underline" data-img="https://images.unsplash.com/photo-1715625911590-293acabd5cfc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHw4fHxEcmFtYXRpYyUyMHBhaW50aW5nJTIwb2YlMjBSYW1hJTIwc3RhbmRpbmclMjB2aWN0b3Jpb3VzJTIwYWZ0ZXIlMjB0aGUlMjBiYXR0bGUlMjB3aXRoJTIwUmF2YW5hfGVufDB8MHx8fDE3NTUyNjE0NDV8MA&ixlib=rb-4.1.0&q=80&w=1080" data-desc="Victory of dharma in the Ramayana">View</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="w-full px-6 py-12 bg-slate-50">
+      <div class="w-full flex flex-col md:flex-row items-center justify-between gap-6">
+        <div>
+          <h3 class="text-xl font-semibold">Join a Satsang or Celebrate Rama Navami</h3>
+          <p class="text-sm text-slate-600 mt-1">Find local groups, online recitations and festival guides to participate in community puja.</p>
+        </div>
+        <div>
+          <a href="#" onclick="window.parent.handlePreviewNavigation(\'contact.html\'); return false;" class="inline-block bg-gradient-to-r from-amber-600 to-orange-500 text-white px-6 py-3 rounded shadow hover:scale-105 transition">Connect with a center</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox" class="fixed inset-0 bg-black/70 hidden items-center justify-center z-50 p-6" aria-hidden="true">
+    <div class="bg-white rounded-lg overflow-hidden w-full max-w-4xl max-w-none">
+      <div class="flex items-start justify-between p-4">
+        <div class="text-lg font-semibold" id="lbTitle">Image</div>
+        <button id="lbClose" class="text-slate-500 hover:text-slate-800">Close</button>
+      </div>
+      <div class="w-full flex flex-col md:flex-row">
+        <div class="w-full md:w-1/2 bg-slate-100">
+          <img id="lbImage" src="" alt="" class="w-full h-64 md:h-full object-cover" />
+        </div>
+        <div class="w-full md:w-1/2 p-6">
+          <p id="lbDesc" class="text-sm text-slate-700">Description...</p>
+          <div class="mt-4 flex gap-2">
+            <a href="#" onclick="window.parent.handlePreviewNavigation(\'contact.html\'); return false;" class="inline-block bg-amber-600 text-white px-4 py-2 rounded">Enquire</a>
+            <button id="lbPrev" class="px-3 py-2 border rounded text-sm">Prev</button>
+            <button id="lbNext" class="px-3 py-2 border rounded text-sm">Next</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="w-full px-6 py-8 bg-white border-t">
+    <div class="w-full flex flex-col md:flex-row items-start md:items-center justify-between max-w-none">
+      <div>
+        <div class="text-lg font-semibold">Ram Bhakti</div>
+        <div class="text-sm text-slate-500 mt-1">Reflect • Recite • Remember</div>
+      </div>
+      <div class="mt-4 md:mt-0 text-sm text-slate-600">
+        <div>© <span id="year"></span> Ram Bhakti</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile nav
+    const navToggle = document.getElementById('navToggle');
+    const mobileNav = document.getElementById('mobileNav');
+    navToggle.addEventListener('click', () => mobileNav.classList.toggle('hidden'));
+
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Gallery filters
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const galleryCards = document.querySelectorAll('.gallery-card');
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('bg-amber-100','text-amber-700'));
+        btn.classList.add('bg-amber-100','text-amber-700');
+        const filter = btn.dataset.filter;
+        galleryCards.forEach(card => {
+          if(filter === 'all' || card.dataset.type === filter){
+            card.classList.remove('hidden');
+            card.classList.add('block');
+          } else {
+            card.classList.remove('block');
+            card.classList.add('hidden');
+          }
+        });
+      });
+    });
+    // Initialize
+    document.querySelector('.filter-btn[data-filter="all"]').classList.add('bg-amber-100','text-amber-700');
+
+    // Lightbox
+    const openBtns = document.querySelectorAll('.openLightbox');
+    const lightbox = document.getElementById('lightbox');
+    const lbImage = document.getElementById('lbImage');
+    const lbDesc = document.getElementById('lbDesc');
+    const lbTitle = document.getElementById('lbTitle');
+    const lbClose = document.getElementById('lbClose');
+    const lbPrev = document.getElementById('lbPrev');
+    const lbNext = document.getElementById('lbNext');
+
+    let visible = Array.from(galleryCards);
+    function refreshVisible(){ visible = Array.from(galleryCards).filter(c => !c.classList.contains('hidden')); }
+    refreshVisible();
+
+    openBtns.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const img = btn.dataset.img;
+        const desc = btn.dataset.desc;
+        const card = btn.closest('.gallery-card');
+        const title = card ? card.dataset.title : 'Image';
+        lbImage.src = img;
+        lbDesc.textContent = desc;
+        lbTitle.textContent = title;
+        lightbox.classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+        refreshVisible();
+      });
+    });
+
+    lbClose.addEventListener('click', () => { lightbox.classList.add('hidden'); document.body.style.overflow = ''; });
+    lightbox.addEventListener('click', (e) => { if(e.target === lightbox){ lightbox.classList.add('hidden'); document.body.style.overflow = ''; }});
+
+    function navigate(dir){
+      const cur = lbTitle.textContent;
+      const idx = visible.findIndex(p => p.dataset.title === cur);
+      if(idx === -1) return;
+      let next = idx + dir;
+      if(next < 0) next = visible.length - 1;
+      if(next >= visible.length) next = 0;
+      const nextCard = visible[next];
+      const img = nextCard.querySelector('img').src;
+      const desc = nextCard.querySelector('.openLightbox').dataset.desc;
+      lbImage.src = img;
+      lbDesc.textContent = desc;
+      lbTitle.textContent = nextCard.dataset.title;
+    }
+    lbPrev.addEventListener('click', () => navigate(-1));
+    lbNext.addEventListener('click', () => navigate(1));
+
+    document.addEventListener('keydown', (e) => {
+      if(lightbox.classList.contains('hidden')) return;
+      if(e.key === 'ArrowRight') navigate(1);
+      if(e.key === 'ArrowLeft') navigate(-1);
+      if(e.key === 'Escape') { lightbox.classList.add('hidden'); document.body.style.overflow = ''; }
+    });
+  </script>
+</body>
+</html>
